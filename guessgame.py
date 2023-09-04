@@ -13,10 +13,10 @@ guess = 0
 
 
 
-# Try Catch to catch the ValueError (Incase user enters a string) 
+# Try Catch to catch the ValueError (Incase user enters a illegal character) 
 try:
-    while chances > 0:
-        print (f"Chances Left {chances}")
+    while chances > 0:                                                  #Game loop to keep running the code while condition is met.
+        print (f"Chances Left {chances}")                               
         guess = int(input("Enter Your Guess:\n"))
         if guess == secret_num:
             print(f"The guess {guess} is correct!YOU WIN")
