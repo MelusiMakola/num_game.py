@@ -18,7 +18,7 @@ try:
 #Game loop to keep running the code while condition is met.    
     while chances > 0:                 
         print (f"Chances Left {chances}")                               
-        guess = int(input("Enter Your Guess:\n"))
+        guess = int(input("Enter Your Guess:\n>>"))
         if guess == secret_num:
             print(f"The guess {guess} is correct!YOU WIN")
             break
@@ -39,7 +39,7 @@ try:
             elif reset == "n":
                 break
             else:
-                print("Value added not in options. Ending Game...")
+                print(f"{reset} not in options. Ending Game...")
     print("Game Over")
 except ValueError as error:
     print(error)
